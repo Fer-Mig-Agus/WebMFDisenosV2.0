@@ -112,7 +112,7 @@
     width: 95%;
     height:100%;
     display:grid;
-    grid-template-rows: 450px 400px;
+    grid-template-rows: 1500px 400px;
     grid-template-areas:
     "trabajos"
     "nosotros"
@@ -124,10 +124,11 @@
     width: 100%;
     height: 100%;
     display:grid;
-    grid-template-rows: 100px 400px 50px;
+    grid-template-rows: 100px 400px 900px 50px;
     grid-template-areas:
     "titulo-trabajo" 
     "tarjetas"
+    "tarjetas-more"
     "boton";
     margin-top: 3%;
 }
@@ -183,6 +184,10 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
 }
+.tarjetas-verticales .articulos{
+    height: 450px;
+    width: 90%;
+}
 
 .articulos{
     overflow: hidden;
@@ -195,6 +200,16 @@
     height: 100%;
     margin-top:3%;
     cursor: pointer;
+}
+
+#trabajos .imgMore{
+    grid-area: tarjetas-more;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: solid 1px black;
 }
 
 #trabajos .bottom-verMas{
@@ -218,8 +233,3 @@
 }
 
 
-#trabajos .imgMore{
-    margin-top: 20%;
-    display: none;
-    border: solid 1px black;
-}
