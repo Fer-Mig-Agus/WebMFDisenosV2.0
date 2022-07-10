@@ -112,7 +112,7 @@
     width: 95%;
     height:100%;
     display:grid;
-    grid-template-rows: 1500px 400px;
+    grid-template-rows: 820px 1250px;
     grid-template-areas:
     "trabajos"
     "nosotros"
@@ -252,3 +252,46 @@
     background: red;
     color: black;
 }
+
+#cuerpo #nosotros{
+    grid-area: nosotros;
+    margin-top: 3%;
+}
+
+#nosotros h3{
+    font-size: 40px;
+    font-family: sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    text-align: center;
+    padding-top: -4%;
+    margin-bottom: 50px;
+    width: 100%;
+    background: black;
+}
+#nosotros h3:hover{
+    color: black;
+    background-color: white;
+}
+#nosotros .art-nosotros{
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#nosotros .art-nosotros h4{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+
+}
+
+#nosotros .art-nosotros p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(191, 68, 68);
+    
+}
+
