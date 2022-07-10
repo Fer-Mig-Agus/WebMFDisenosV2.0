@@ -23,6 +23,8 @@ function closeImg(){
 const fullImgVert=document.querySelector('.bottom-verMas');
 const masInfo=document.querySelector('#mas-info-tarjetas');
 const divMore=document.querySelector('#imgMore');
+const divNosotros=document.querySelector('#nosotros');
+const cuerpoPrincipal=document.querySelector('#cuerpo');
 
 fullImgVert.addEventListener('click',funcionVerMas);
 
@@ -33,12 +35,14 @@ function funcionVerMas(){
         divMore.classList.remove('activo');
         divMore.style.display='none';
         masInfo.style.display='none';
-        this.textContent='Ver Mas...'
+        this.textContent='Ver Más...';
+        cuerpoPrincipal.style.gridTemplateRows=('820px 1250px');
     }else{
         divMore.classList.add('activo');
         divMore.style.display='block';
         masInfo.style.display='block';
-        this.textContent='Ver Menos...'
+        this.textContent='Ver Menos...';
+        cuerpoPrincipal.style.gridTemplateRows=('1810px 1250px');
     }
 }
 
