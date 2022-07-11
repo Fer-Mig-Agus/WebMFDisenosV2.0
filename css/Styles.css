@@ -279,10 +279,7 @@
     width: 100%;
     background: black;
 }
-#nosotros h3:hover{
-    color: black;
-    background-color: white;
-}
+
 #nosotros .art-nosotros{
     width: 90%;
     height: 300px;
