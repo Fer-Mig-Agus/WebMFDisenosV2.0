@@ -4,7 +4,7 @@
 }
 
 :root {
-    --fondo-cabecera: rgba(0, 0, 0 , 0.6);
+    --fondo-cabecera: rgba(250, 237, 237,0.2);
     --fondo-cuerpo: rgb(34, 33, 33);
 }
 
@@ -285,6 +285,7 @@
     margin-bottom: 20px;
     font-size: 50px;
     text-align: center;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #seccion-informativa .texto .titulos-h3{
@@ -294,6 +295,7 @@
     color: white;
     font-size: 30px;
     text-align: center;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #seccion-informativa .texto .parrafos-p{
@@ -303,6 +305,7 @@
     font-size: 20px;
     text-align: center;
     color: white;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -311,6 +314,7 @@
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
+    margin-top: 6%;
 }
 
 #seccion-cards #all-cards{
@@ -347,9 +351,10 @@
     width: 90%;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 15.5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #all-cards .card .bottom-card{
@@ -360,6 +365,7 @@
     color: black;
     font-size: 30px;
     text-align: center;
+    margin-top: 9.5%;
 }
 
 #all-cards .card .bottom-card:hover{
