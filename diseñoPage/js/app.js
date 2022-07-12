@@ -47,7 +47,7 @@ function mostrarMasImagenes(){
         fullImgVert.style.display='block';
         this.style.marginTop='-57%';
         this.style.marginLeft='25%';
-        cuerpoPrincipal.style.gridTemplateRows=('1825px 1250px');
+        cuerpoPrincipal.style.gridTemplateRows=('1825px 2500px');
     }else{
         divMoreMore.classList.add('activo');
         divMoreMore.style.display='block';
@@ -55,7 +55,7 @@ function mostrarMasImagenes(){
         this.textContent='Ver menos...';
         this.style.marginTop='10%';
         this.style.marginLeft='43%';
-        cuerpoPrincipal.style.gridTemplateRows=('2800px 1250px');
+        cuerpoPrincipal.style.gridTemplateRows=('2800px 2500px');
     }
 }
 
@@ -87,7 +87,7 @@ function funcionVerMas(){
         this.textContent='Ver Más...';
         this.style.marginLeft='43%';
         fullFullImg.style.display='none';
-        cuerpoPrincipal.style.gridTemplateRows=('820px 1250px');
+        cuerpoPrincipal.style.gridTemplateRows=('820px 2500px');
     }else{
         divMore.classList.add('activo');
         divMore.style.display='block';
@@ -96,6 +96,6 @@ function funcionVerMas(){
         fullFullImg.style.display='block';
         fullFullImg.style.marginTop='-57%';
         fullFullImg.style.marginLeft='25%';
-        cuerpoPrincipal.style.gridTemplateRows=('1810px 1250px');
+        cuerpoPrincipal.style.gridTemplateRows=('1810px 2500px');
     }
 }
