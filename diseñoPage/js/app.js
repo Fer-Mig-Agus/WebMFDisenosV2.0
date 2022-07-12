@@ -5,6 +5,8 @@ function openFullImg(reference,valor){
     if(valor){
         fullImgBox.style.display="flex";
         fullimg.src=reference;
+        fullimg.style.width='900px';
+        fullimg.style.marginLeft='15%';
     }else{
         fullImgBox.style.display="flex";
         fullimg.src=reference;
@@ -45,7 +47,7 @@ function mostrarMasImagenes(){
         this.textContent='Aun más';
         divMoreMore.style.display='none';
         fullImgVert.style.display='block';
-        this.style.marginTop='-57%';
+        this.style.marginTop='-65%';
         this.style.marginLeft='25%';
         cuerpoPrincipal.style.gridTemplateRows=('1825px 2500px');
     }else{
@@ -94,7 +96,7 @@ function funcionVerMas(){
         this.textContent='Ver Menos...';
         this.style.marginLeft='55%';
         fullFullImg.style.display='block';
-        fullFullImg.style.marginTop='-57%';
+        fullFullImg.style.marginTop='-65%';
         fullFullImg.style.marginLeft='25%';
         cuerpoPrincipal.style.gridTemplateRows=('1810px 2500px');
     }
