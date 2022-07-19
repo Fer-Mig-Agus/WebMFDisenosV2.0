@@ -5,6 +5,8 @@ function openFullImg(reference,valor){
     if(valor){
         fullImgBox.style.display="flex";
         fullimg.src=reference;
+        fullimg.style.width='900px';
+        fullimg.style.marginLeft='15%';
     }else{
         fullImgBox.style.display="flex";
         fullimg.src=reference;
