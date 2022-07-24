@@ -128,7 +128,8 @@
 #content #content-notice{
     grid-area: cuerpo;
     display: grid;
-    grid-template-rows: 400px 400px 1000px 1500px;
+    /* grid-template-rows: 400px 400px 1000px 1500px; */
+    grid-template-rows: 625px 390px 1fr 1fr;
     width: 100%;
     height: 100%;
     background: var(--fondo-cuerpo);
@@ -167,17 +168,62 @@
     margin-top: 10%;
     width: 90%;
     background: linear-gradient(#8d42ee 0%, #c69d9d 100%);
+    border-radius: 50px;
+    
 }
-#formulario form{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(7,1fr);
+#formulario .form{
+    width: 90%;
+    margin-left: 3%;
+    
+}
+#formulario .form .form-label{
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+    margin-top: 10px;
+}
+#formulario .form .form-input, .form-textarea{
+    background: rgb(1, 1, 2);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
     width: 100%;
-    height: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: Roboto;
+
 }
 
-#formulario form label{
-    font-size: 20px;
+#formulario .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+
+}
+#formulario .form .btn-submit{
+    width: 104%;
+    font-family: Roboto;
+    outline: none;
+    background: #ff851b;
+    font-size: 16px;
+    border:none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 0px 0px 50px 50px;
+    margin-top: 0.5%;
+}
+
+#formulario .form .btn-submit:hover{
+    background: #F29718;
+    color: black;
+
 }
 
 #formulario label .obligatorio{
@@ -199,11 +245,17 @@
 
 .img-info{
     width: 90%;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     color: white;
     display: block;
     border: 1px solid white;
+}
+
+.img-info img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 .texto-info{
     width: 90%;
@@ -229,7 +281,7 @@
 #content-notice #servicio-completo{
     width: 100%;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #servicio-completo h3{
@@ -252,20 +304,28 @@
 }
 #servicio-completo #servicio-tarjetas{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    height: 55%;
 }
 #servicio-tarjetas .card{
     width: 90%;
     height: 250px;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 .card .img-card{
     width: 100%;
-    height: 150px;
+    height: 250px;
     overflow: hidden;
-    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.card .img-card img{
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
 .card h4{
@@ -289,16 +349,18 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4,1fr);
     margin-top: -20%;
 
 }
 
-
-
-
-
+#tipos-servicios .seccion-tipo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5%;
+}
 
 #content footer{
     grid-area: pie;
