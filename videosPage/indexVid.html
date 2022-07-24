@@ -49,24 +49,22 @@
                     </p>
                 </div>
                 <div id="formulario">
-                    <form>
-                        <label for="" id="nombre-label">Nombre <span class="obligatorio">*</span> </label>
-                        <label for="" id="apeliido-label">Apellido <span class="obligatorio">*</span> </label>
-                        <input type="text" placeholder="Nombre..." name="" id="nombre">
-                        <input type="text" placeholder="Apellido..." name="" id="apellido">
-
-                        <label for="" id="email-label">Email <span class="obligatorio">*</span> </label>
-                        <label for="" id="telefono-label">Número de Telefono <span class="obligatorio">*</span> </label>
-                        <input type="email" placeholder="Email..." name="" id="email">
-                        <input type="text" placeholder="Telefono..." name="" id="telefono">
-
-                        <label for="" id="mensaje-label">Mensaje <span class="obligatorio">*</span><br><span
+                    <form class="form">
+                        <label for="nombre" class="form-label">Nombre: <span class="obligatorio">*</span></label>
+                        <input type="text" class="form-input" name="" id="nombre" placeholder="Nombre...">
+                        <label for="apellido" class="form-label">Apellido: <span class="obligatorio">*</span></label>
+                        <input type="text" class="form-input" name="" id="apellido" placeholder="Apellido...">
+                        <label for="email" class="form-label">Email: <span class="obligatorio">*</span></label>
+                        <input type="text" class="form-input" name="" id="email" placeholder="Email...">
+                        <label for="nro-telefono" class="form-label">Nro Telefono: <span
+                                class="obligatorio">*</span></label>
+                        <input type="text" class="form-input" name="" id="nro-telefono" placeholder="Nro Telefono...">
+                        <label for="mensaje" class="form-label">Mensaje <span class="obligatorio">*</span><br><span
                                 id="aclaracion-mensaje">Por favor escribe tu solicitud con detalle será un placer
                                 servirte</span> </label>
-                        <input type="text-area" placeholder="Mensaje..." name="" id="mensaje">
+                        <textarea placeholder="Mensaje..." class="form-textarea" id="mensaje"></textarea>
 
-
-                        <input type="submit" id="boton-enviar" value="Enviar">
+                        <input type="submit" class="btn-submit" id="boton-enviar" value="Enviar">
                     </form>
                     <div id="spinner">
                         <div class="sk-chase">
@@ -85,7 +83,7 @@
             </section>
             <section id="info-videos">
                 <div class="img-info">
-                    imagen 
+                    <img src="img/produccion-audiovisual.jpg" alt="">
                 </div>
                 <div class="texto-info">
                     <h4>Producción Audiovisual?</h4>
@@ -93,138 +91,176 @@
                         El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
                         si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
                         video, es muy posible que tu contenido no
-                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de creatividad
+                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de
+                        creatividad
                         mezclada con arte. Para una produccion
                         audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de la
                         edicion consiste en lograr elegir las
-                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede durarhoras, incluso dias.
-                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico, paraque el conjunto audiovisual tenga
+                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede
+                        durarhoras, incluso dias.
+                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico,
+                        paraque el conjunto audiovisual tenga
                         sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
                     </p>
                 </div>
             </section>
             <section id="servicio-completo">
-                <h3 id="trabajos">Dentro de nuestro servicio de Edición de Video Incluimos: <br><span>Dependiendo de la magnitud empleamos todas las técnicas o solo las necesarias</span></h3>
+                <h3 id="trabajos">Dentro de nuestro servicio de Edición de Video Incluimos: <br><span>Dependiendo de la
+                        magnitud empleamos todas las técnicas o solo las necesarias</span></h3>
                 <div id="servicio-tarjetas">
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/dise-grafico.jpg" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>Diseño Gráfico</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/animacion.jpg" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>Animacion</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/musicalizacion.png" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>musicalización</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/recursos-creativos.jpg" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>Recursos Creativos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/tipos-formatos.jpg" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>Cambio de Formato</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                     <div class="card">
                         <div class="img-card">
+                            <img src="img/tipos-resolucion.jpg" alt="">
                         </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
-                    </div>
-                    <div class="card">
-                        <div class="img-card">
-                        </div>
-                        <h4>titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate. Velit dicta quidem quas temporibus.</p>
+                        <h4>Cambion de Resolución</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, praesentium labore? Odit
+                            cum iusto ut ipsam, consequuntur velit, at neque repudiandae, ex culpa nisi cupiditate.
+                            Velit dicta quidem quas temporibus.</p>
                     </div>
                 </div>
-            
+
             </section>
             <section id="tipos-servicios">
-                
-                <div class="texto-info">
-                    <h4>Producción Audiovisual?</h4>
-                    <p>
-                        El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
-                        si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
-                        video, es muy posible que tu contenido no
-                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de creatividad
-                        mezclada con arte. Para una produccion
-                        audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de la
-                        edicion consiste en lograr elegir las
-                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede durarhoras, incluso dias.
-                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico, paraque el conjunto audiovisual tenga
-                        sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
-                    </p>
+                <div class="seccion-tipo">
+                    <div class="texto-info">
+                        <h4>Edición de Video para YouTube</h4>
+                        <p>
+                            El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
+                            si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
+                            video, es muy posible que tu contenido no
+                            funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de
+                            creatividad
+                            mezclada con arte. Para una produccion
+                            audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de
+                            la
+                            edicion consiste en lograr elegir las
+                            mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede
+                            durarhoras, incluso dias.
+                            Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico,
+                            paraque el conjunto audiovisual tenga
+                            sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
+                        </p>
+                    </div>
+                    <div class="img-info">
+                        <img src="img/edicion-youtube.jpg" alt="">
+                    </div>
                 </div>
-                <div class="img-info">
-                    imagen 
+                <div class="seccion-tipo">
+                    <div class="img-info">
+                        <img src="img/edicion-redesSociales.jpg" alt="">
+                    </div>
+                    <div class="texto-info">
+                        <h4>Edición de Video para Redes Sociales</h4>
+                        <p>
+                            El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
+                            si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
+                            video, es muy posible que tu contenido no
+                            funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de
+                            creatividad
+                            mezclada con arte. Para una produccion
+                            audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de
+                            la
+                            edicion consiste en lograr elegir las
+                            mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede
+                            durarhoras, incluso dias.
+                            Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico,
+                            paraque el conjunto audiovisual tenga
+                            sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
+                        </p>
+                    </div>
                 </div>
-                <div class="img-info">
-                    imagen 
+                <div class="seccion-tipo">
+                    <div class="texto-info">
+                        <h4>Producción Audiovisual?</h4>
+                        <p>
+                            El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
+                            si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
+                            video, es muy posible que tu contenido no
+                            funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de
+                            creatividad
+                            mezclada con arte. Para una produccion
+                            audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de
+                            la
+                            edicion consiste en lograr elegir las
+                            mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede
+                            durarhoras, incluso dias.
+                            Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico,
+                            paraque el conjunto audiovisual tenga
+                            sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
+                        </p>
+                    </div>
+                    <div class="img-info">
+                        imagen
+                    </div>
                 </div>
-                <div class="texto-info">
-                    <h4>Producción Audiovisual?</h4>
-                    <p>
-                        El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
-                        si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
-                        video, es muy posible que tu contenido no
-                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de creatividad
-                        mezclada con arte. Para una produccion
-                        audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de la
-                        edicion consiste en lograr elegir las
-                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede durarhoras, incluso dias.
-                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico, paraque el conjunto audiovisual tenga
-                        sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
-                    </p>
-                </div>
-                
-                <div class="texto-info">
-                    <h4>Producción Audiovisual?</h4>
-                    <p>
-                        El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
-                        si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
-                        video, es muy posible que tu contenido no
-                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de creatividad
-                        mezclada con arte. Para una produccion
-                        audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de la
-                        edicion consiste en lograr elegir las
-                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede durarhoras, incluso dias.
-                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico, paraque el conjunto audiovisual tenga
-                        sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
-                    </p>
-                </div>
-                <div class="img-info">
-                    imagen 
-                </div>
-                <div class="img-info">
-                    imagen 
-                </div>
-                <div class="texto-info">
-                    <h4>Producción Audiovisual?</h4>
-                    <p>
-                        El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
-                        si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
-                        video, es muy posible que tu contenido no
-                        funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de creatividad
-                        mezclada con arte. Para una produccion
-                        audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de la
-                        edicion consiste en lograr elegir las
-                        mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede durarhoras, incluso dias.
-                        Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico, paraque el conjunto audiovisual tenga
-                        sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
-                    </p>
+                <div class="seccion-tipo">
+                    <div class="img-info">
+                        imagen
+                    </div>
+                    <div class="texto-info">
+                        <h4>Producción Audiovisual?</h4>
+                        <p>
+                            El pilar de una producción audiovisual de cualquier tipo es din dudda, la edicion de video.
+                            si tienes el equipo de produccion audiovisual mas caro, per no realizas una buena edicion de
+                            video, es muy posible que tu contenido no
+                            funcione como esperabas. Ahora bien, cuando hablamos de edicion de video, hablamos de
+                            creatividad
+                            mezclada con arte. Para una produccion
+                            audiovisual, se suele usar entre un 10% y un 40% de total del material grabado. El reto de
+                            la
+                            edicion consiste en lograr elegir las
+                            mejores toma, y colocarlas en el orden correcto. Parece sencillo pero, este proceso puede
+                            durarhoras, incluso dias.
+                            Para esta accion, se requiere de editores profesionales de audio, video y diseño gráfrico,
+                            paraque el conjunto audiovisual tenga
+                            sentido, sea armonioso, y responda a las necesidades por las que ha sido creado.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
