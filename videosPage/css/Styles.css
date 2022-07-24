@@ -333,6 +333,9 @@
     display: block;
     margin-top: 7%;
 }
+#content-pie #logo-pie img:hover{
+    width: 85%;
+}
 
 #content-pie a{
     font-family: WebSymbolsRegular;
