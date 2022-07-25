@@ -271,7 +271,11 @@
 }
 
 .error-parrafo{
-    background:red;
+    background:rgb(246, 52, 52);
+}
+
+.logrado-parrafo{
+    background: rgb(63, 239, 63);
 }
 
 #content-notice #info-videos {
