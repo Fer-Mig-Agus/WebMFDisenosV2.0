@@ -222,16 +222,28 @@
     border: none;
     color: #fff;
     padding: 15px 0;
-    cursor: pointer;
     transition: all .5s ease;
     border-radius: 0px 0px 50px 50px;
     margin-top: 0.5%;
 }
 
-#formulario .form .btn-submit:hover {
-    background: #F29718;
-    color: black;
+.btn-disable{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
+.btn-enable{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.error{
+    border-bottom: 2px solid red !important;
+    background: rgb(250, 157, 65) !important;
+}
+
+.error-none{
+    border-bottom: 2px solid green !important;
 }
 
 #formulario label .obligatorio {
@@ -241,6 +253,25 @@
 #formulario label #aclaracion-mensaje {
     color: blue;
     font-size: 15px;
+}
+
+.resultado-p{
+    border: 3px solid black;
+    font-size: 24px;
+    font-family: Roboto;
+    margin-top: 1%;
+    padding: 10px;
+    width: 85%;
+    height: 30px;
+    margin-left: 6%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.error-parrafo{
+    background:red;
 }
 
 #content-notice #info-videos {
