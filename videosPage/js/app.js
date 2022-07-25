@@ -3,6 +3,7 @@
 const btnEnviar = document.querySelector('#boton-enviar');
 const formulario = document.querySelector('#formulario');
 const contenidoNoticia = document.querySelector('#content-notice');
+const form=document.querySelector('.form');
 
 //Variables para campos
 const nombre = document.querySelector('#nombre')
@@ -35,7 +36,7 @@ function eventListeners() {
     mensaje.addEventListener('blur', validarFormulario);
 
     //Enviar Email
-    
+    formulario.addEventListener('submit', enviarEmail);
 }
 
 
@@ -103,4 +104,35 @@ function mostrarError(mensaje) {
         contenidoNoticia.style.gridTemplateRows = ('700px 390px 1fr 1fr');
         resultado.appendChild(mensajeError);
     }
+}
+
+//Envia el email
+function enviarEmail(e) {
+    e.preventDefault();
+    //mostrar el spinner
+    const spinner = document.querySelector('#spinner');
+    contenidoNoticia.style.gridTemplateRows = ('725px 390px 1fr 1fr');
+    spinner.style.display = 'block';
+    
+    setTimeout(() => {
+        spinner.style.display = 'none';
+        //Despues de tres segundos ocultar el spinner y mostrar el mensaje
+        const parrafo = document.createElement('p');
+        parrafo.textContent = 'El mensaje se envio correctamente';
+        parrafo.classList.add('resultado-p','logrado-parrafo');
+        const resultado = document.querySelector('#resultado');
+        contenidoNoticia.style.gridTemplateRows = ('700px 390px 1fr 1fr');
+        resultado.appendChild(parrafo);
+        setTimeout(()=>{
+            parrafo.remove();
+            contenidoNoticia.style.gridTemplateRows = ('625px 390px 1fr 1fr');
+            resetearFormulario();
+        },5000);
+    },3000);
+}
+
+//Funcion que resetea el formulario
+function resetearFormulario(){
+    form.reset();
+    iniciarApp();
 }
