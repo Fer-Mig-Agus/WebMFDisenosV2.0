@@ -51,8 +51,8 @@ function eventListeners() {
 //Funciones
 
 function iniciarApp() {
-    btnEnviar.classList.add('btn-disable');
     btnEnviar.disabled = true;
+    btnEnviar.classList.add('btn-disable');
 }
 
 function validarFormulario(e) {
