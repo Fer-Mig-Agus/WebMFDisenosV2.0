@@ -14,14 +14,6 @@ const mensaje = document.querySelector('#mensaje')
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-
-
-
-
-
-
-
-
 //Event Listeners
 eventListeners();
 function eventListeners() {
@@ -38,14 +30,6 @@ function eventListeners() {
     //Enviar Email
     formulario.addEventListener('submit', enviarEmail);
 }
-
-
-
-
-
-
-
-
 
 
 //Funciones
