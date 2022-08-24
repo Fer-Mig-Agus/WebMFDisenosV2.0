@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +10,43 @@
     <link rel="icon" type="favicon/x-icon" href="../img/logo.png">
     <title>MF Diseños: Fotografia Pro</title>
 </head>
+
 <body>
     <div id="content">
         <header id="header">
             <div id="cabecera">
-            <h4 id="welcome">Bienvenido a <br> <a href="indexFoto.html">Fotografía Pro</a></h4>
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <a href="../index.html">Volver</a>
-                    </li>
-                    <li>
-                        <a href="#carrusel">Trabajos</a>
-                    </li>
-                    <li>
-                        <a href="#promociones">Promociones</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <h4 id="welcome">Bienvenido a <br> <a href="indexFoto.html">Fotografía Pro</a></h4>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Volver</a>
+                        </li>
+                        <li>
+                            <a href="#content-carrusel">Trabajos</a>
+                        </li>
+                        <li>
+                            <a href="#promociones">Promociones</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div id="content-body">
+            <div class="full-img" id="fullImgBox">
+                <img src="" id="fullimg" alt="">
+                <span onclick="closeImg()">X</span>
+            </div>
             <section id="carrusel">
                 <h2>Trabajos Realizados</h2>
+                <div id="content-carrusel">
+                    <div class="buttom-box">
+                        <img src="img/left.png" class="atras-img" alt="">
+                        <img src="img/right.png" class="adelante-img" alt="">
+                    </div>
+                    <div class="imagen-carrusel-box"><img src="img/foto1.png" id="imagen-carrusel" onclick="openFullImg(this.src)" title="Haz Click"
+                        alt="imagen.png"></div>
+
+                </div>
 
             </section>
             <section id="promociones">
@@ -42,8 +57,12 @@
                         <div class="img-box-promo">
                             <img src="img/prueba.jpg" alt="" title="promocion">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis, fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore, architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint soluta magni in fugit alias praesentium!
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis,
+                            fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis
+                            consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore,
+                            architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint
+                            soluta magni in fugit alias praesentium!
                         </p>
                     </div>
                 </article>
@@ -53,8 +72,12 @@
                         <div class="img-box-promo">
                             <img src="img/prueba.jpg" alt="" title="promocion">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis, fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore, architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint soluta magni in fugit alias praesentium!
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis,
+                            fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis
+                            consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore,
+                            architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint
+                            soluta magni in fugit alias praesentium!
                         </p>
                     </div>
                 </article>
@@ -64,8 +87,12 @@
                         <div class="img-box-promo">
                             <img src="img/prueba.jpg" alt="" title="promocion">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis, fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore, architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint soluta magni in fugit alias praesentium!
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis,
+                            fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis
+                            consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore,
+                            architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint
+                            soluta magni in fugit alias praesentium!
                         </p>
                     </div>
                 </article>
@@ -75,8 +102,12 @@
                         <div class="img-box-promo">
                             <img src="img/prueba.jpg" alt="" title="promocion">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis, fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore, architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint soluta magni in fugit alias praesentium!
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis,
+                            fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis
+                            consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore,
+                            architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint
+                            soluta magni in fugit alias praesentium!
                         </p>
                     </div>
                 </article>
@@ -86,8 +117,12 @@
                         <div class="img-box-promo">
                             <img src="img/prueba.jpg" alt="" title="promocion">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis, fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore, architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint soluta magni in fugit alias praesentium!
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dignissimos quis,
+                            fugiat nam perspiciatis quam excepturi repudiandae nulla. Incidunt deserunt perspiciatis
+                            consequuntur maiores, repellat minima enim sequi voluptates culpa cumque?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore cumque dolore,
+                            architecto numquam consequatur et repellat commodi nisi officia! Maxime nam veritatis sint
+                            soluta magni in fugit alias praesentium!
                         </p>
                     </div>
                 </article>
@@ -104,5 +139,7 @@
             <p id="desarrollado">&copy; Desarrollado por <a href="#">Code Page S.A</a></p>
         </footer>
     </div>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
