@@ -161,13 +161,17 @@
 }
 
 #carrusel h2{
-    color: red;
-    text-shadow: 0px 0px 5px white;
-    font-size: 40px;
+    color: white;
+    font-family: fantasy,Arial, Helvetica, sans-serif,Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
     text-align: center;
+    margin-top: -2%;
+    margin-bottom: 1%;
     
 }
-
+#carrusel h2:hover{
+    color: black;
+}
 #carrusel #content-carrusel{
     overflow: hidden;
     width: 100%;
@@ -236,7 +240,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 2%;
-    background: black;
+    background: black 0.5;
 
 }
 #promociones .box-promociones{
