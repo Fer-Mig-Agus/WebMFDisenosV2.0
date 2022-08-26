@@ -84,6 +84,7 @@
     background: red;
     border-radius: 40px;
     font-size: 38px;
+    transition: all 300ms;
 
 }
 #menu > ul > li > ul{
@@ -108,6 +109,7 @@
     text-decoration: none;
     font-size: 25px;
     color: white;
+    transition: all 300ms;
 
 }
 
@@ -116,6 +118,7 @@
     color: red;
     background: white;
     border-radius: 100px;
+    transition: all 300 ms;
 }
 
 #content #cuerpo{
@@ -332,7 +335,7 @@
     overflow: hidden;
 }
 #content-pie #logo-pie img{
-    width: 75%;
+    width: 210px;
     height: auto;
     display: block;
     margin-top: 7%;

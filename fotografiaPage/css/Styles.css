@@ -240,7 +240,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 2%;
-    background: black 0.5;
+    background: rgba(0,0,0,0.7);
 
 }
 #promociones .box-promociones{
@@ -301,7 +301,7 @@
     overflow: hidden;
 }
 #content-pie #logo-pie img{
-    width: 75%;
+    width: 210px;
     height: auto;
     display: block;
     margin-top: 7%;
