@@ -1,8 +1,9 @@
+/* Estilos generales */
 * {
     margin: 0px auto;
     padding: 0px;
 }
-
+/* variables para el color de fondo y de los botones del carrousel  */
 :root {
     --fondo-cabecera: rgba(250, 237, 237,0.4);
     --fondo-cuerpo: rgb(94, 94, 94);
@@ -21,6 +22,7 @@
     font-style: normal;
 }
 
+/* he dividido el body en tres partes con grid */
 #content {
     display: grid;
     width: 100%;
@@ -34,7 +36,7 @@
     ;
     background-color: var(--fondo-cuerpo);
 }
-
+/* Inicio de la cabecera */
 #content #header{
     grid-area: cabecera;
     width: 100%;
@@ -53,6 +55,7 @@
     width: 100%;
     height: 255%;
 }
+/* Estilos del mensaje de bienvenida */
 #content #header #cabecera #welcome{
     grid-area: bienvenido;
     width: 100%;
@@ -75,6 +78,7 @@
     font-size: 65px;
     color: black;
 }
+/* Estilos del menu */
 #content #header #cabecera #nav{
     grid-area: menu;
     width: 100%;
@@ -111,7 +115,8 @@
     background-color: red;
     border-radius: 50px;
 }
-
+/* Fin de la cabecera */
+/* Inicio del content-body */
 
 #content #content-body{
     grid-area: cuerpo;
@@ -121,7 +126,7 @@
     display: grid;
     grid-template-rows: 800px 2200px;
 }
-
+/* Estilos de la ventana en donde se muestran las imagenes cuando le hacen click */
 #fullImgBox{
     width: 100%;
     height: 100%;
@@ -133,7 +138,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* Estilo de la imagen cuando se abre haciendole click */
 #fullImgBox img{
     width: 90%;
     max-width: 70%;
@@ -142,6 +147,7 @@
     margin-top: 2%;
 }
 
+/* Estilos del boton X en la ventana que se abre cuando le hacen click  */
 #fullImgBox span{
     position: absolute;
     top:5%;
@@ -152,7 +158,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Estilos del carrousel */
 
 #content-body #carrusel{
     width: 100%;
@@ -218,7 +224,7 @@
     margin-left: 5%;    
 }
 
-
+/* Estilo de la seccion de promociones */
 #content-body #promociones{
     width: 100%;
     height: 100%;
@@ -272,6 +278,10 @@
     text-align: center;
 }
 
+/* Fin del content-body*/
+
+/* Inicio del pie de pagina */
+
 #content footer{
     grid-area: pie;
     width: 100%;
@@ -294,6 +304,7 @@
     margin-top: 3.5%;
 
 }
+/* Estilos de los logos del pie de pagina*/
 #content-pie #logo-pie{
     display: block;
     width: 100%;
@@ -318,7 +329,7 @@
 
 
 }
-
+/* Cada uno tiene su propia clase para poder hacerle el hover */
 #content-pie #facebook:hover{ 
     color: rgb(4, 4, 227);
 }
@@ -353,3 +364,5 @@
 #content footer #desarrollado a:hover{
     color: blue;
 }
+
+/* Fin del pie de pagina */

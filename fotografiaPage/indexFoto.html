@@ -10,12 +10,15 @@
     <link rel="icon" type="favicon/x-icon" href="../img/logo.png">
     <title>MF Diseños: Fotografia Pro</title>
 </head>
-
+<!-- He dividido en tres partes al body -->
 <body>
     <div id="content">
+        <!-- Inicio de la cabecera -->
         <header id="header">
             <div id="cabecera">
+                <!-- Mensaje de bienvenida -->
                 <h4 id="welcome">Bienvenido a <br> <a href="indexFoto.html">Fotografía Pro</a></h4>
+                <!-- Menu -->
                 <nav id="nav">
                     <ul>
                         <li>
@@ -31,18 +34,27 @@
                 </nav>
             </div>
         </header>
+        <!-- Fin de la cabecera -->
+        <!-- Inicio del content-body -->
         <div id="content-body">
+            <!-- Ventana en donde se muestran las imagenes cuando le hacen click -->
             <div class="full-img" id="fullImgBox">
+                <!--Este div es una ventana que se activa cuando se hace un click en la imagen-->
                 <img src="" id="fullimg" alt="">
+                <!--Este span es la X de la ventana de la imagen, que llama a la funcion CloseImg()-->
                 <span onclick="closeImg()">X</span>
             </div>
+            <!-- Este es una carrousel que cambia las imagenes de manera manual -->
             <section id="carrusel">
                 <h2>Trabajos Realizados</h2>
                 <div id="content-carrusel">
+                    <!-- Este div contiene las imagenes de las flechas para cambiar las imagenes -->
                     <div class="buttom-box">
                         <img src="img/left.png" class="atras-img" alt="">
                         <img src="img/right.png" class="adelante-img" alt="">
                     </div>
+                    <!-- Este div contiene la imagen que se mostrara, depende de cual boton precione -->
+                    <!-- Ademas de que se agregue la funcion que se muestre en una ventana completa si preciona la imagen -->
                     <div class="imagen-carrusel-box"><img src="img/foto1.png" id="imagen-carrusel" onclick="openFullImg(this.src)" title="Haz Click"
                         alt="imagen.png"></div>
 
@@ -50,6 +62,7 @@
 
             </section>
             <section id="promociones">
+                <!-- Esta seccion es de promociones -->
                 <h3>Nuestras Promociones</h3>
                 <article>
                     <h2>Mis 15 años</h2>
@@ -129,16 +142,23 @@
             </section>
 
         </div>
+        <!-- Fin del content-body -->
+        <!-- Inicio del pie de pagina -->
         <footer id="footer">
+            <!--Dividi el footer en dos filas, para darle otro color a la seccion de desarrollado-->
             <div id="content-pie">
+                <!--Este es mi logo con un enlace que redirecciona a la pagina main-->
                 <a href="../main/index.html" id="logo-pie"><img src="../main/img/logo.png" alt="Logo" title="Inicio"></a>
+                <!--Solo puse una letra porque  agregue una fuente-->
                 <a href="#" id="facebook">f</a>
                 <a href="#" id="twitter">t</a>
-                <a href="#" id="youtube">y</a>
+                <a href="#" id="youtube">y</a>//Cierra la ventana en donde se muestra las imagenes
             </div>
             <p id="desarrollado">&copy; Desarrollado por <a href="#">Code Page S.A</a></p>
         </footer>
+        <!-- Fin del pie de pagina -->
     </div>
+    <!-- Anexo el archivo js -->
     <script src="js/app.js"></script>
 </body>
 

@@ -1,4 +1,5 @@
-//Variables
+//Variables para el carrousel
+//la variable imagenes guarda las rutas de las imagenes
 let imagenes = ['img/foto1.png', 'img/foto2.png', 'img/foto3.png'];
 const buttomBox = document.querySelector('.buttom-box');
 const img = document.querySelector('#imagen-carrusel');
@@ -12,6 +13,7 @@ function addEvenlistener() {
 }
 
 //Funciones
+//Esta funcion hace que cuando precionan las flechas cambie la imagen
 let cont = 0;
 function carrousel(e) {
     if (e.target.classList.contains('atras-img')){
@@ -33,10 +35,10 @@ function carrousel(e) {
     }
 }
 
-
+//Variables para la ventana que se ejecuta cuando se hace un click en la imagen
 const fullImgBox=document.getElementById("fullImgBox");
 const fullimg=document.getElementById("fullimg");
-
+//Funcion que abre la imagen cuando la hacen click
 function openFullImg(reference){
     if(reference){
         fullImgBox.style.display="flex";
@@ -46,7 +48,7 @@ function openFullImg(reference){
         buttomBox.style.display="none";
     }
 }
-
+//Funcion que cierra la ventana que se ejecuta cuando le hacen click a la imagen
 function closeImg(){
     fullImgBox.style.display="none";
     buttomBox.style.display="grid";
