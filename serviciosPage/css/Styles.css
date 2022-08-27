@@ -1,13 +1,13 @@
+/* Estilos generales  */
 * {
     margin: 0px auto;
     padding: 0px;
 }
-
+/* variables creadas para poder cambiar facilmente el color del cuerpo y de la cabecera */
 :root {
     --fondo-cabecera: rgba(250, 237, 237,0.4);
     --fondo-cuerpo: rgb(34, 33, 33);
 }
-
 
 /*Fuentes añadidas*/
 @font-face {
@@ -21,7 +21,7 @@
     font-style: normal;
 }
 
-
+/* utilice grid para poder realizar tres filas */
 #content {
     display: grid;
     width: 100%;
@@ -35,7 +35,7 @@
     ;
     background-color: var(--fondo-cuerpo);
 }
-
+/* Comienzo de la cabecera  */
 #content #header{
     grid-area: cabecera;
     width: 100%;
@@ -54,6 +54,8 @@
     width: 100%;
     height: 255%;
 }
+
+/* Estilos del mensaje de bienvenida */
 #content #header #cabecera #welcome{
     grid-area: bienvenido;
     width: 100%;
@@ -77,6 +79,7 @@
     color: red;
     transition: all 300ms;
 }
+/*  Estilos del menu */
 #content #header #cabecera #nav{
     grid-area: menu;
     width: 100%;
@@ -117,7 +120,9 @@
     background-color: red;
     border-radius: 50px;
 }
+/* Fin de la cabecera */
 
+/* Inicio del content-body */
 
 #cuerpo{
     grid-area: cuerpo;
@@ -140,7 +145,7 @@
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+/* Estilo de las tarjetas */
 #cuerpo #all-cards{
     display: grid;
     width: 80%;
@@ -203,12 +208,9 @@
     background-color: black;
     cursor: pointer;
 }
+/* Fin del content-body */
 
-
-
-
-
-
+/* Inicio del pie de pagina */
 
 #content footer{
     grid-area: pie;
@@ -232,6 +234,8 @@
     margin-top: 3.5%;
 
 }
+
+/* Estilos de los logos */
 #content-pie #logo-pie{
     display: block;
     width: 100%;
@@ -264,8 +268,7 @@
     color: red;
 }
 
-
-
+/* Estilos del parrafo de desarrollado */
 
 #content footer #desarrollado{
     grid-area: desarrollado;
@@ -290,3 +293,5 @@
 #content footer #desarrollado a:hover{
     color: blue;
 }
+
+/* Fin del pie de pagina */
