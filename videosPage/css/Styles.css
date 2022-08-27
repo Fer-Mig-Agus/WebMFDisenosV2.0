@@ -1,8 +1,10 @@
+/* Estilos generales */
 * {
     margin: 0px auto;
     padding: 0px;
 }
 
+/* Variables que contienen el color para que sea mas facil de cambiar */
 :root {
     --fondo-cabecera: rgba(128, 126, 126, 0.4);
     --fondo-cuerpo: rgb(34, 33, 33);
@@ -21,7 +23,7 @@
 }
 
 
-
+/* Dividi el body en tres partes */
 #content {
     display: grid;
     width: 100%;
@@ -33,7 +35,7 @@
         "cuerpo cuerpo cuerpo cuerpo"
         "pie pie pie pie";
 }
-
+/* Inicio de la cabecera */
 #content #cabecera {
     grid-area: cabecera;
     width: 100%;
@@ -41,7 +43,7 @@
     overflow: hidden;
 
 }
-
+/* Estilos del video de la cabecera */
 #content #cabecera .bannerVideo {
     position: absolute;
     width: 100%;
@@ -66,7 +68,7 @@
     position: relative;
     background-color: var(--fondo-cabecera);
 }
-
+/* Estilos del mensaje de bienvenida */
 #content #cabecera #header .bienvenido {
     grid-area: welcome;
     font-size: 75px;
@@ -89,7 +91,7 @@
     transition: all 300ms;
     text-shadow: 0px 1px 5px white;
 }
-
+/* Estilos del menu */
 #header #menu {
     grid-area: menu;
     width: 100%;
@@ -127,17 +129,18 @@
     font-size: 37px;
     transition: all 300ms;
 }
+/* Fin de la cabecera */
+/* Inicio del content-body  */
 
 #content #content-notice {
     grid-area: cuerpo;
     display: grid;
-    /* grid-template-rows: 400px 400px 1000px 1500px; */
     grid-template-rows: 625px 390px 1fr 1fr;
     width: 100%;
     height: 100%;
     background: var(--fondo-cuerpo);
 }
-
+/* Estilos del formulario */
 #content-notice #formulario-servicio {
     width: 90%;
     height: 100%;
@@ -212,7 +215,7 @@
     min-height: 50px;
 
 }
-
+/* Estilos del boton de enviar del formulario */
 #formulario .form .btn-submit {
     width: 104%;
     font-family: Roboto;
@@ -254,7 +257,7 @@
     color: blue;
     font-size: 15px;
 }
-
+/* Estilos del parrafo que se muestra con el mensaje de error o enviado */
 .resultado-p{
     border: 1px solid black;
     font-size: 24px;
@@ -345,7 +348,7 @@
     font-family: 'Times New Roman', serif;
 
 }
-
+/* Estilos de las tarjetas */
 #servicio-completo #servicio-tarjetas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -407,6 +410,8 @@
     grid-template-columns: 50% 50%;
     margin-bottom: 5%;
 }
+/* Fin del content-body */
+/* Inicio del pie de pagina */
 
 #content footer {
     grid-area: pie;
@@ -429,7 +434,7 @@
     margin-top: 3.5%;
 
 }
-
+/* Estilos del logo del pie de pagina  */
 #content-pie #logo-pie {
     display: block;
     width: 100%;
@@ -497,8 +502,11 @@
     color: blue;
 }
 
+/* Fin del pie de pagina */
+
 
 /*SPINNER*/
+/* Lo saque de un proyecto */
 
 #spinner {
     display: none;

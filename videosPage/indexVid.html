@@ -10,15 +10,19 @@
     <link rel="icon" type="favicon/x-icon" href="img/logo.png">
     <title>MF Diseños: Videos Pro</title>
 </head>
-
+<!-- He dividido el body en tres partes con grid -->
 <body>
     <div id="content">
+        <!-- Inicio de la cabecera -->
         <div id="cabecera">
+            <!-- Aqui coloque el video que se muestra en la cabecera -->
             <div class="bannerVideo">
                 <video src="video/video 4.mp4" autoplay muted loop></video>
             </div>
             <header id="header">
+                <!-- Este es el mensaje de bienvenida -->
                 <h2 class="bienvenido">Bienvenido a <br> <a href="indexVid.html">Video Profesional</a></h2>
+                <!-- Menu -->
                 <nav id="menu">
                     <ul>
                         <li>
@@ -35,7 +39,10 @@
             </header>
 
         </div>
+        <!-- Fin de la cabecera -->
+        <!-- Inicio del content-body -->
         <div id="content-notice">
+            <!-- Este es el formulario -->
             <section id="formulario-servicio">
                 <div id="info-formulario">
                     <h3>Por contratacion de un Video Profesional</h3>
@@ -66,6 +73,7 @@
 
                         <input type="submit" class="btn-submit" id="boton-enviar" value="Enviar">
                     </form>
+                    <!-- Este es el spinner que se muestra cuando envia el mensaje -->
                     <div id="spinner">
                         <div class="sk-chase">
                             <div class="sk-chase-dot"></div>
@@ -76,11 +84,13 @@
                             <div class="sk-chase-dot"></div>
                         </div>
                     </div>
+                    <!-- En este div se muestra el mensaje de error o de enviado -->
                     <div id="resultado">
                         
                     </div>
                 </div>
             </section>
+            <!-- Seccion donde muestra informacion de lo que es la produccion audiovisual -->
             <section id="info-videos">
                 <div class="img-info">
                     <img src="img/produccion-audiovisual.jpg" alt="">
@@ -104,6 +114,7 @@
                     </p>
                 </div>
             </section>
+            <!-- Esta seccion muestra tarjetas de los servicios incluidos en la edicion de video -->
             <section id="servicio-completo">
                 <h3 id="trabajos">Dentro de nuestro servicio de Edición de Video Incluimos: <br><span>Dependiendo de la
                         magnitud empleamos todas las técnicas o solo las necesarias</span></h3>
@@ -165,6 +176,7 @@
                 </div>
 
             </section>
+            <!-- Tipos de servicios en la se que desempeña MF Diseños -->
             <section id="tipos-servicios">
                 <div class="seccion-tipo">
                     <div class="texto-info">
@@ -264,17 +276,23 @@
                 </div>
             </section>
         </div>
+        <!-- Fin del content-body -->
+        <!-- Inicio del pie de pagina -->
         <footer id="footer">
+            <!--Dividi el footer en dos filas, para darle otro color a la seccion de desarrollado-->
             <div id="content-pie">
+                <!--Este es mi logo con un enlace que redirecciona a la pagina main-->
                 <a href="../main/index.html" id="logo-pie"><img src="../main/img/logo.png" alt="Logo" title="Inicio"></a>
+                <!--Solo puse una letra porque  agregue una fuente-->
                 <a href="#" id="facebook">f</a>
                 <a href="#" id="twitter">t</a>
                 <a href="#" id="youtube">y</a>
             </div>
             <p id="desarrollado">&copy; Desarrollado por <a href="#">Code Page S.A</a></p>
         </footer>
+        <!-- Fin del pie de pagina -->
     </div>
-
+    <!-- Anexo del archivo js -->
     <script src="js/app.js"></script>
 </body>
 

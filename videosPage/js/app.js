@@ -17,32 +17,37 @@ const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0
 //Event Listeners
 eventListeners();
 function eventListeners() {
-    //Cuando la pagina arranca
+    //Cuando la pagina arranca, convoca a la funcion iniciarApp
     document.addEventListener('DOMContentLoaded', iniciarApp);
 
     //Campos del formulario
+    //Para campo, valida si no esta vacio
     nombre.addEventListener('blur', validarFormulario);
     apellido.addEventListener('blur', validarFormulario);
     nroTelefono.addEventListener('blur', validarFormulario);
     email.addEventListener('blur', validarFormulario);
     mensaje.addEventListener('blur', validarFormulario);
 
-    //Enviar Email
+    //Enviar Email, cuando precione el boton enviar
     formulario.addEventListener('submit', enviarEmail);
 }
 
 
 //Funciones
 
+//Esta funcion desabilita el boton de enviar y le da estilos de desabilitado, que estan
+//reflejados en el CSS
 function iniciarApp() {
     btnEnviar.disabled = true;
     btnEnviar.classList.add('btn-disable');
 }
 
+//Esta funcion valida los formularios, si esta vacio muestra el mensaje, o si el email
+//no tiene la composicion correcta muestra el mensaje de error
 function validarFormulario(e) {
     if (e.target.value.length > 0) {
 
-        //Eliminar los errores
+        //Elimina el mensaje de error cuando se coloca bien el campo
         const mensajeErrorParrafo = document.querySelector('p.error-parrafo');
         if (mensajeErrorParrafo) {
             mensajeErrorParrafo.remove();
@@ -55,8 +60,9 @@ function validarFormulario(e) {
         e.target.classList.add('error');
         mostrarError('Todos lo campos son obligatorios');
     }
+    //Pregunta si el campo es de email
     if (e.target.type === 'email') {
-
+        //luego verifica a traves de validaciones
         if (er.test(e.target.value)) {
             const mensajeErrorParrafo = document.querySelector('p.error-parrafo');
             if (mensajeErrorParrafo) {
@@ -71,13 +77,14 @@ function validarFormulario(e) {
             mostrarError('Email no válido');
         }
     }
+    //Si todo esta correcto habilita el boton enviar 
     if (er.test(email.value) && apellido.value !== '' && nroTelefono.value !== '' && nombre.value !== '' && mensaje.value !== '') {
         btnEnviar.classList.remove('btn-disable');
         btnEnviar.classList.add('btn-enable');
         btnEnviar.disabled = false;
     }
 }
-
+//Muestra un mensaje de error, ya sea por campo vacio o por falta de formato del email, recibe por parametro el mensaje
 function mostrarError(mensaje) {
     const mensajeError = document.createElement('p');
     mensajeError.textContent = mensaje;
@@ -90,7 +97,8 @@ function mostrarError(mensaje) {
     }
 }
 
-//Envia el email
+//Envia el email, muestra el spinner por 3 segundos y cuando desaparece el spinner
+//Aparece el mensaje de enviado correctamente
 function enviarEmail(e) {
     e.preventDefault();
     //mostrar el spinner
