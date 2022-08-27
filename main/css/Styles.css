@@ -2,6 +2,7 @@
     margin: 0px auto;
     padding: 0px;
 }
+/* este es el color del body  */
 :root{
     --fondo:rgb(34, 33, 33);
 }
@@ -16,6 +17,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* divide el body en tres partes  */
 #content {
     display: grid;
     width: 100%;
@@ -29,7 +32,7 @@
     ;
     background-color: var(--fondo);
 }
-
+/* Inicio de la cabecera  */
 #content #cabecera{
     grid-area: cabecera;
     width: 100%;
@@ -39,7 +42,7 @@
     grid-template-columns: 40% 60%;
     grid-template-areas: "logo menu";
 }
-
+/* Estilos del logo */
 #content #cabecera #logo{
     grid-area: logo;
     margin-top: 20%;
@@ -51,7 +54,7 @@
     height: auto;
     margin-left: 3%;
 }
-
+/* Estilos del menu */
 #content #cabecera #menu{
     grid-area: menu;
     width: 90%;
@@ -87,6 +90,7 @@
     transition: all 300ms;
 
 }
+/* Estilos del Submenu */
 #menu > ul > li > ul{
     display: none;
     list-style: none;
@@ -120,6 +124,8 @@
     border-radius: 100px;
     transition: all 300 ms;
 }
+/* Fin de la cabecera */
+/* Inicio de la seccion, que le puse como cuerpo  */
 
 #content #cuerpo{
     grid-area: cuerpo;
@@ -132,7 +138,7 @@
     "nosotros"
     ;
 }
-
+/* Seccion donde muestra los trabajos*/
 #content #cuerpo #trabajos{
     grid-area: trabajos;
     width: 100%;
@@ -146,7 +152,7 @@
     "boton";
     margin-top: 3%;
 }
-
+/*  Ventana en donde se muestra la imagen completa*/
 #content #cuerpo #trabajos #fullImgBox{
     width: 100%;
     height: 100%;
@@ -177,7 +183,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Seccion de la fotos de la seccion de trabajos realizados */
 
 #content #cuerpo #trabajos .titulos{
     grid-area: titulo-trabajo;
@@ -226,7 +232,7 @@
 }
 
 
-
+/* Enlace a Diseño Grafico  */
 #trabajos #mas-info-tarjetas{
     display: none;
     font-size: 25px;
@@ -246,7 +252,7 @@
     background-color: red;
     border-radius: 10px;
 }
-
+/* Estilos del boton Ver Mas */
 #trabajos .bottom-verMas{
     display: block;
     width: 20%;
@@ -306,6 +312,8 @@
     
 }
 
+/*  Fin del cuerpo */
+/* Inicio del footer  */
 #content footer{
     grid-area: pie;
     width: 100%;
@@ -328,6 +336,8 @@
     margin-top: 3.5%;
 
 }
+
+/* Estilos de los logos */
 #content-pie #logo-pie{
     display: block;
     width: 100%;
@@ -352,6 +362,7 @@
 
 
 }
+/* Color del hover en cada enlace */
 
 #content-pie #facebook:hover{ 
     color: rgb(4, 4, 227);
@@ -365,7 +376,7 @@
 
 
 
-
+/*  Estilos del parrafo de desallorro con su enlace */
 #content footer #desarrollado{
     grid-area: desarrollado;
     width: 100%;
@@ -390,3 +401,4 @@
     color: blue;
 }
 
+/* Fin del Footer */

@@ -14,8 +14,10 @@
 
 <body>
     <div id="content">
+        <!--Inicio de la cabecera -->
         <header id="cabecera">
             <a href="index.html" id="logo"><img src="img/logo.png" alt="Logo" title="Inicio"></a>
+            <!-- Menu con 4 items y 2 submenus -->
             <nav id="menu">
                 <ul>
                     <li>
@@ -23,6 +25,7 @@
                     </li>
                     <li>
                         <a href="../serviciosPage/indexServ.html">Servicios</a>
+                        <!--Submenu-->
                         <ul>
                             <li>
                                 <a href="../diseñoPage/indexDis.html">Diseño Grafico</a>
@@ -40,6 +43,7 @@
                     </li>
                     <li>
                         <a href="#footer">Contactos</a>
+                        <!--Submenu-->
                         <ul>
                             <li>
                                 <a href="#">Facebook</a>
@@ -58,19 +62,28 @@
                 </ul>
             </nav>
         </header>
+        <!--Fin de la cabecera -->
+        <!--Inicio del cuerpo -->
         <div id="cuerpo">
+            <!--Seccion donde muestro imagenes de los trabajos que realice-->
             <section id="trabajos">
+                <!--Este div es una ventana que se activa cuando se hace un click en la imagen-->
                 <div class="full-img" id="fullImgBox">
                     <img src="" id="fullimg" alt="">
+                    <!--Este span es la X de la ventana de la imagen, que llama a la funcion CloseImg()-->
                     <span onclick="closeImg()">X</span>
                 </div>
+                
                 <h3 class="titulos">Trabajos Realizados</h3>
                 <div class="tarjetas">
+                    <!--Imagenes que se muestran a la primera-->
                     <article class="articulos">
                         <img src="img/Trabajos/tarjeta h 1.png" onclick="openFullImg(this.src,true)" title="Haz Click"
                             alt="imagen.png">
                     </article>
                     <article class="articulos">
+                        <!--aqui llamo a la funcion openFullImg(direccionDeLaImagen,Es vertical?) donde manda como
+                        segundo parametro si la imagen es vertical u horizontal, el programador tiene que decidir-->
                         <img src="img/Trabajos/tarjeta h 2.png" onclick="openFullImg(this.src,true)" title="Haz Click"
                             alt="imagen.png">
                     </article>
@@ -91,6 +104,7 @@
                             alt="imagen.png">
                     </article>
                 </div>
+                <!--Estas son imagenes que se muestran cuando precionan el boton Ver Mas-->
                 <div id="imgMore">
                     <div class="tarjetas tarjetas-verticales">
                         <article class="articulos">
@@ -119,11 +133,15 @@
                         </article>
                     </div>
                 </div>
-                <p id="mas-info-tarjetas">Por más información del Servicio ingrese a: <a href="diseñoPage/indexDis.html">Diseño Gráfico</a></p>
+                <!--Aqui coloco un enlace a la pagina de Diseño Grafico-->
+                <p id="mas-info-tarjetas">Por más información del Servicio ingrese a: <a href="../diseñoPage/indexDis.html">Diseño Gráfico</a></p>
+                <!--Este es el boton ver mas, que luego cambia a Ver Menos-->
                 <span href="#" class="bottom-verMas">Ver Más...</span>
 
             </section>
+            <!--En esta seccion se coloca todo lo relevante con la empresa-->
             <section id="nosotros">
+                <!--Cada articulo posee un titulo y un parrafo-->
                 <h3 id="Nosotros-h3">Nosotros</h3>
                 <article class="art-nosotros">
                     <h4>Nuestros inicios</h4>
@@ -203,19 +221,25 @@
                 </article>
             </section>
         </div>
+        <!--Fin del cuerpo -->
+        <!--Inicio del pie -->
         <footer id="footer">
+            <!--Dividi el footer en dos filas, para darle otro color a la seccion de desarrollado-->
             <div id="content-pie">
+                <!--Este es mi logo con un enlace que redirecciona a la pagina main-->
                 <a href="index.html" id="logo-pie"><img src="img/logo.png" alt="Logo" title="Inicio"></a>
+                <!--Solo puse una letra porque  agregue una fuente-->
                 <a href="#" id="facebook">f</a>
                 <a href="#" id="twitter">t</a>
                 <a href="#" id="youtube">y</a>
             </div>
             <p id="desarrollado">&copy; Desarrollado por <a href="#">Code Page S.A</a></p>
         </footer>
+        <!--Fin del pie -->
     </div>
 
 
-
+    <!--Anexo archivo js-->
     <script src="js/app.js"></script>
 </body>
 
