@@ -19,7 +19,7 @@ function openFullImg(reference,valor){
     }
     
 }
-//Cierra la ventana en donde se muestra las imagenes
+//Esta funcion abre y modifica el tamaño de la imagen, dependiendo si es vertical u Horizontal
 
 function closeImg(){
     fullImgBox.style.display="none";

@@ -1,7 +1,10 @@
+/* Estilos generales */
+
 * {
     margin: 0px auto;
     padding: 0px;
 }
+/* variables en donde guarda los colores de fondo */
 
 :root {
     --fondo-cabecera: rgba(250, 237, 237,0.2);
@@ -20,6 +23,8 @@
     font-style: normal;
 }
 
+/* Divido al body en 3 partes usando grid*/
+
 #content {
     display: grid;
     width: 100%;
@@ -34,6 +39,7 @@
     background-color: var(--fondo-cuerpo);
 }
 
+/* Inicio de la cabecera */
 #content #header{
     grid-area: cabecera;
     width: 100%;
@@ -51,6 +57,7 @@
     width: 100%;
     height: 255%;
 }
+/* Estilos del mensaje de bienvenida*/
 #content #header #cabecera #welcome{
     grid-area: bienvenido;
     width: 100%;
@@ -72,6 +79,7 @@
     cursor: pointer;
     font-size: 65px;
 }
+/* Estilos del menu */
 #content #header #cabecera #nav{
     grid-area: menu;
     width: 100%;
@@ -108,7 +116,8 @@
     background-color: red;
     border-radius: 50px;
 }
-
+/* Fin de la cabecera */
+/* Inicio del content-body */
 #content #body{
     grid-area: cuerpo;
     width: 95%;
@@ -120,7 +129,7 @@
     "seccion-informativa"
     ;
 }
-
+/* Estilos de la seccion donde muestro las imagenes de los trabajos realizados */
 #content #body #trabajos{
     grid-area: trabajos;
     width: 100%;
@@ -135,6 +144,7 @@
     margin-top: 3%;
 }
 
+/* Estilo de la ventana en donde se muestra la imagen completa */
 #content #body #trabajos #fullImgBox{
     width: 100%;
     height: 100%;
@@ -154,7 +164,7 @@
     height: 610px;
     margin-top: 2%;
 }
-
+/* Estilos de boton X de la ventana en donde meustra completa la imagen  */
 #content #body #trabajos #fullImgBox span{
     position: absolute;
     top:5%;
@@ -178,6 +188,7 @@
     text-shadow: -2px -1px 0px white;
 }
 
+/* Estilos de la imagenes de mi trabajo */
 .tarjetas{
     grid-area: tarjetas;
     width: 100%;
@@ -203,7 +214,7 @@
     margin-top:3%;
     cursor: pointer;
 }
-
+/* Estilos de la imagenes que se muestran al precionar el boton ver mas */
 #trabajos #imgMore{
     grid-area: tarjetas-more;
     margin-top: 12%;
@@ -212,7 +223,7 @@
     height: 100%;
     display: none;
 }
-
+/* Estilos de la imagenes que se muestran al precionar el boton ver aun mas */
 #trabajos #imgMoreImg{
     grid-area: tarjetas-more-more;
     margin-top: 10%;
@@ -221,7 +232,7 @@
     height: 100%;
     display: none;
 }
-
+/* Estilos de los botones */
 #trabajos .bottom-verMas{
     display: block;
     width: 20%;
@@ -261,7 +272,7 @@
     background: red;
     color: black;
 }
-
+/* Estilos de la seccion de preguntas frecuentes */
 #content #body #seccion-informativa{
     grid-area: seccion-informativa;
     width: 100%;
@@ -311,7 +322,7 @@
     color: white;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* Estilos de las tarjetas */
 
 #seccion-informativa #seccion-cards{
     grid-area: cards;
@@ -384,7 +395,8 @@
     cursor: pointer;
 }
 
-
+/* Fin del content-body */
+/* Inicio del pie de pagina */
 
 #content footer{
     grid-area: pie;
@@ -408,6 +420,7 @@
     margin-top: 3.5%;
 
 }
+/* Estilos del logo */
 #content-pie #logo-pie{
     display: block;
     width: 100%;
@@ -424,14 +437,11 @@
     width: 85%;
 }
 
-
 #content-pie a{
     font-family: WebSymbolsRegular;
     text-decoration: none;
     font-size: 800%;
     color: white;
-
-
 }
 
 #content-pie #facebook:hover{ 
@@ -443,9 +453,6 @@
 #content-pie #youtube:hover{
     color: red;
 }
-
-
-
 
 #content footer #desarrollado{
     grid-area: desarrollado;
@@ -471,3 +478,4 @@
     color: blue;
 }
 
+/* Fin del pie de pagina */

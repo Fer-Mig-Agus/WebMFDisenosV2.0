@@ -1,6 +1,7 @@
+//Estas son variables para la imagen que se abre en otra ventana
 const fullImgBox=document.getElementById("fullImgBox");
 const fullimg=document.getElementById("fullimg");
-
+//Esta funcion abre y modifica el tamaño de la imagen, dependiendo si es vertical u Horizontal
 function openFullImg(reference,valor){
     if(valor){
         fullImgBox.style.display="flex";
@@ -16,7 +17,7 @@ function openFullImg(reference,valor){
     }
     
 }
-
+//Cierra la ventana en donde se muestra las imagenes
 function closeImg(){
     fullImgBox.style.display="none";
 
@@ -38,7 +39,7 @@ const divMoreMore=document.querySelector('#imgMoreImg');
 
 
 
-//funcion para el aun mas
+//funcion para el aun mas, modifica el tamaño del content-body, para mostrar u ocultar las imagenes
 fullFullImg.addEventListener('click',mostrarMasImagenes);
 
 function mostrarMasImagenes(){
