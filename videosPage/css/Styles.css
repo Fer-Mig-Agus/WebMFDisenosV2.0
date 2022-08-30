@@ -175,7 +175,7 @@
     width: 90%;
     background: linear-gradient(#8d42ee 0%, #c69d9d 100%);
     border-radius: 50px;
-
+    padding-top: 10px;
 }
 
 #formulario .form {
