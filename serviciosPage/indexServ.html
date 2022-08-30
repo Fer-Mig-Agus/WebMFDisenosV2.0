@@ -11,6 +11,7 @@
     <title>MF Diseños: Servicios</title>
 </head>
 <!-- He dividido al body en 3 partes  -->
+
 <body>
     <div id="content">
         <!-- Inicio de la cabecera -->
@@ -22,13 +23,13 @@
                     <!-- Menu  -->
                     <ul>
                         <li>
-                            <a href="../main/index.html">Main</a>
+                            <a href="../main/index.html">Volver</a>
                         </li>
                         <li>
-                            <a href="indexServ.html">Home</a>
+                            <a href="#all-service">Servicios</a>
                         </li>
                         <li>
-                            <a href="#cuerpo">All Service</a>
+                            <a href="#contratacion">Contratacion</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,52 +38,96 @@
         <!-- Fin de la cabecera -->
         <!-- Inicio del cuerpo  -->
         <section id="cuerpo">
-            <!-- Aqui realizo tres tarjetas para redireccionar a cada una de las pestañas  -->
-            <h2 class="titulos-intermedios">Todos los Servicios</h2>
-            <div id="all-cards">
-                <div class="card">
-                    <!--  Utilizo este div para poder hacerle un overflow, asi no se desconfigure si
+            <article class="article-cuerpo">
+                <!-- Aqui realizo tres tarjetas para redireccionar a cada una de las pestañas  -->
+                <h2 class="titulos-intermedios" id="all-service">Todos los Servicios</h2>
+                <div id="all-cards">
+                    <div class="card">
+                        <!--  Utilizo este div para poder hacerle un overflow, asi no se desconfigure si
                         cambia el tamaño de la imagen -->
-                    <div class="img-block">
-                        <img src="img/diseño.png" alt="">
+                        <div class="img-block">
+                            <img src="img/diseño.png" alt="">
+                        </div>
+                        <div class="parrafo-block">
+                            <p class="parrafo-card">
+                                Diseño <br> Gráfico
+                            </p>
+                        </div>
+                        <a href="../diseñoPage/indexDis.html" class="bottom-card">Ir</a>
                     </div>
-                    <div class="parrafo-block">
-                        <p class="parrafo-card">
-                            Diseño <br> Gráfico
-                        </p>
+                    <div class="card">
+                        <div class="img-block">
+                            <img src="img/video.png" alt="">
+                        </div>
+                        <div class="parrafo-block">
+                            <p class="parrafo-card">
+                                Videos <br> Profesionales
+                            </p>
+                        </div>
+                        <a href="../videosPage/indexVid.html" class="bottom-card">Ir</a>
                     </div>
-                    <a href="../diseñoPage/indexDis.html" class="bottom-card">Ir</a>
+                    <div class="card">
+                        <div class="img-block">
+                            <img src="img/fotografia.png" alt="">
+                        </div>
+                        <div class="parrafo-block">
+                            <p class="parrafo-card">
+                                Fotografía <br> Profesional
+                            </p>
+                        </div>
+                        <a href="../fotografiaPage/indexFoto.html" class="bottom-card">Ir</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="img-block">
-                        <img src="img/video.png" alt="">
+            </article>
+            <article class="article-cuerpo" id="content-form">
+                <h3 id="contratacion">Por contratación de algún Servicio</h3>
+                <div id="formulario-servicio">
+                    <div id="formulario">
+                        <form class="form">
+                            <label for="nombre" class="form-label">Nombre: <span class="obligatorio">*</span></label>
+                            <input type="text" class="form-input" name="" id="nombre" placeholder="Nombre...">
+                            <label for="apellido" class="form-label">Apellido: <span
+                                    class="obligatorio">*</span></label>
+                            <input type="text" class="form-input" name="" id="apellido" placeholder="Apellido...">
+                            <label for="email" class="form-label">Email: <span class="obligatorio">*</span></label>
+                            <input type="email" class="form-input" name="" id="email" placeholder="Email...">
+                            <label for="nro-telefono" class="form-label">Nro Telefono: <span
+                                    class="obligatorio">*</span></label>
+                            <input type="text" class="form-input" name="" id="nro-telefono"
+                                placeholder="Nro Telefono...">
+                            <label for="mensaje" class="form-label">Mensaje <span class="obligatorio">*</span><br><span
+                                    id="aclaracion-mensaje">Por favor escribe tu solicitud con detalle será un placer
+                                    servirte</span> </label>
+                            <textarea placeholder="Mensaje..." class="form-textarea" id="mensaje"></textarea>
+
+                            <input type="submit" class="btn-submit" id="boton-enviar" value="Enviar">
+                        </form>
+                        <!-- Este es el spinner que se muestra cuando envia el mensaje -->
+                        <div id="spinner">
+                            <div class="sk-chase">
+                                <div class="sk-chase-dot"></div>
+                                <div class="sk-chase-dot"></div>
+                                <div class="sk-chase-dot"></div>
+                                <div class="sk-chase-dot"></div>
+                                <div class="sk-chase-dot"></div>
+                                <div class="sk-chase-dot"></div>
+                            </div>
+                        </div>
+                        <!-- En este div se muestra el mensaje de error o de enviado -->
+                        <div id="resultado">
+
+                        </div>
                     </div>
-                    <div class="parrafo-block">
-                        <p class="parrafo-card">
-                            Videos <br> Profesionales
-                        </p>
-                    </div>
-                    <a href="../videosPage/indexVid.html" class="bottom-card">Ir</a>
                 </div>
-                <div class="card">
-                    <div class="img-block">
-                        <img src="img/fotografia.png" alt="">
-                    </div>
-                    <div class="parrafo-block">
-                        <p class="parrafo-card">
-                            Fotografía <br> Profesional
-                        </p>
-                    </div>
-                    <a href="../fotografiaPage/indexFoto.html" class="bottom-card">Ir</a>
-                </div>
-            </div>
+            </article>
         </section>
         <!-- Fin del cuerpo  -->
         <!-- Inicio del pie de pagina  -->
         <footer id="footer">
             <!-- Dividí el pie en dos para poder hacer por un lado los logos y por otro el parrafo de desarrollado  -->
             <div id="content-pie">
-                <a href="../main/index.html" id="logo-pie"><img src="../main/img/logo.png" alt="Logo" title="Inicio"></a>
+                <a href="../main/index.html" id="logo-pie"><img src="../main/img/logo.png" alt="Logo"
+                        title="Inicio"></a>
                 <a href="#" id="facebook">f</a>
                 <a href="#" id="twitter">t</a>
                 <a href="#" id="youtube">y</a>
@@ -91,6 +136,8 @@
         </footer>
         <!-- Fin del pie de pagina -->
     </div>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
