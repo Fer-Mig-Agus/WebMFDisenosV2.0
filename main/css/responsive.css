@@ -165,7 +165,28 @@
     #menu > ul > li {
         margin-top: 1%;
     }
-    
+    #twitter{
+        display: block;
+    }
+    #youtube{
+        display: block;
+    }
+    #content footer #content-pie {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #content footer #content-pie {
+        margin-top: 11.5%;
+    }
+    #content-pie #logo-pie img {
+        width: 120px;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 130px;
+    }
+    #content-pie a {
+        font-size: 465%;
+    }
 }
 
 
