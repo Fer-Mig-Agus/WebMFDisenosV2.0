@@ -233,6 +233,9 @@
     text-align: center;
     margin-top: 1%;
 }
+#contrataciones{
+    display: none;
+}
 
 #info-formulario p {
     color: white;

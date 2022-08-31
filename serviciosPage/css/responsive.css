@@ -12,6 +12,12 @@
 
 
 @media (max-width:1024px) {
+    #nav ul li a {
+        font-size: 35px;
+    }
+    #nav ul li a:hover{
+        font-size: 37px;
+    }
 
 }
 
@@ -19,7 +25,65 @@
 
 
 @media (max-width:800px) {
-
+    #content #header #cabecera #welcome {
+        margin-top: 10%;
+    }
+    #content #header #cabecera #nav {
+        margin-top: -20%;
+    }
+    #nav ul {
+        grid-template-columns: 100%;
+    }
+    #nav ul li {
+        margin-top: 2%;
+    }
+    #cuerpo{
+        grid-template-rows: 1fr 50%;
+    }
+    .article-cuerpo {
+        height: 70%;
+    }
+    .titulos-intermedios {
+        font-size: 40px ;
+        padding-top: 1%;
+    }
+    #contratacion{
+        font-size: 40px;
+        padding-top: 1%;
+    }
+    #cuerpo #all-cards {
+        grid-template-rows: repeat(3,500px);
+        grid-template-columns: 100%;
+    }
+    #all-cards .card {
+        width: 70%;
+        height: 400px;
+    }
+    #all-cards .card .parrafo-block {
+        height: 115px;
+    }
+    #all-cards .card .parrafo-card {
+        padding-top: 3%;
+    }
+    #formulario-servicio {
+        width: 80%;
+    }
+    #formulario-servicio #formulario {
+        margin-top: 0%;
+    }
+    #content footer #content-pie {
+        margin-top: 10.5%;
+        height: 60%;
+    }
+    #content-pie #logo-pie img {
+        width: 160px;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 170px;
+    }
+    #content-pie a {
+        font-size: 570%;
+    }
 
 }
 
@@ -32,13 +96,92 @@
 
 
 @media (max-width:600px) {
+    
+    .titulos-intermedios {
+        font-size: 30px ;
+        padding-top: 4%;
+    }
+    #contratacion{
+        font-size: 30px;
+        padding-top: 4%;
+    }
 
+    #twitter{
+        display: none;
+    }
+    #youtube{
+        display: none;
+    }
+
+    #content footer #content-pie {
+        grid-template-columns: repeat(2,1fr);
+    }
 
 }
 
 
 
 @media (max-width:480px) {
+    #content #header #cabecera #welcome {
+        margin-top: 20%;
+    }
+    #content #header #cabecera #nav {
+        margin-top: -40%;
+    }
+    #nav ul li {
+        margin-top: 10%;
+    }
+    #all-cards .card {
+        width: 90%;
+    }
+    #all-cards .card .bottom-card {
+        margin-top: 11.5%;
+    }
+    #contratacion{
+        font-size: 25px;
+        padding: 0px;
+    }
+    #formulario-servicio {
+        margin-top: 10%;
+    }
+    #formulario .form .form-label {
+        font-size: 25px;
+        text-align: center;
+    }
+    #formulario label #aclaracion-mensaje {
+        display: none;
+    }
+    #formulario .form .form-input, .form-textarea {
+        width: 95%;
+    }
+    #contratacion{
+        display: none;
+    }
+    #contrataciones{
+        display: block;
+    }
+    #twitter{
+        display: block;
+    }
+    #youtube{
+        display: block;
+    }
+    #content footer #content-pie {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #content footer #content-pie {
+        margin-top: 11.5%;
+    }
+    #content-pie #logo-pie img {
+        width: 120px;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 130px;
+    }
+    #content-pie a {
+        font-size: 465%;
+    }
 
 
 }
@@ -46,5 +189,37 @@
 
 
 @media (max-width:320px) {
+    #content #header #cabecera #welcome {
+        font-size: 45px;
+    }
+    #all-cards .card .parrafo-card {
+        padding-top: 12%;
+        font-size: 30px;
+    }
+    #all-cards .card .bottom-card {
+        margin-top: 17.5%;
+    }
+    #twitter{
+        display: block;
+    }
+    #youtube{
+        display: block;
+    }
+    #content footer #content-pie {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #content footer #content-pie {
+        margin-top: 14.5%;
+    }
+    #content-pie #logo-pie img {
+        width: 120px;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 130px;
+    }
+    #content-pie a {
+        font-size: 465%;
+    }
 
 }
