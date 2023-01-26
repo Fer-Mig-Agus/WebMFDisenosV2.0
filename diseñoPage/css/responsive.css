@@ -5,6 +5,10 @@
 
 
 @media (max-width:1280px) {
+    #trabajos .bottom-aunMas {
+        display: none;
+        margin-top: -69%;
+    }
 
 }
 
@@ -12,6 +16,26 @@
 
 
 @media (max-width:1024px) {
+    #trabajo .bottom-aunMas{
+        margin-top: -82.5%;
+    }
+
+    #trabajos .bottom-verMas {
+        margin-top: 20%;
+    }
+
+    #trabajos #imgMore {
+        margin-top: 17%;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 200px;
+    }
+    #content #cuerpo #trabajos #fullImgBox img {
+        height: 550px;
+    }
+    #seccion-informativa #seccion-cards {
+        margin-top: 10%;
+    }
 
 }
 
@@ -19,6 +43,53 @@
 
 
 @media (max-width:800px) {
+    #content #body #trabajos .titulos {
+        width: 100%;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .articulos img {
+        cursor: default;
+    }
+    #trabajos .bottom-verMas {
+        display: none;
+    }
+    #content #body{
+        grid-template-rows: repeat(2,1fr);
+    }
+    #trabajos #imgMore {
+        display: block;
+        margin-top: 60%;
+    }
+    #content #body #seccion-informativa {
+        margin-top: -75%;
+    }
+    #seccion-informativa .texto .parrafos-p {
+        font-size: 17px;
+    }
+    #seccion-informativa .texto .titulos-h3 {
+        font-size: 25px;
+    }
+    #seccion-cards #all-cards {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    #content footer #content-pie {
+        margin-top: 10.5%;
+        height: 60%;
+    }
+    #content-pie #logo-pie img {
+        width: 160px;
+    }
+    #content-pie #logo-pie img:hover {
+        width: 170px;
+    }
+    #content-pie a {
+        font-size: 570%;
+    }
+    
 
 
 }

@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" type="favicon/x-icon" href="../img/logo.png">
     <title>MF Diseños: Servicios</title>
+
+
+    <!-- Estos scripts es para  enviar los datos del formulario a mi email-->
+    <!-- Este importa la API para que funcione -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Inicia el servicio para enviar el email -->
+    <script type="text/javascript">
+        (function() {
+            //Es la funcion que envia el email a mi correo
+            emailjs.init('jDVvLa42d83oV_1F9');
+        })();
+    </script>
+    <!-- Este script toma los datos del formulario para enviarlos al correo, espera 
+    al boton submit para hacerlo -->
+    <script type="text/javascript">
+        window.onload = function() {
+            //Aqui toma el formulario
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                //Aqui toma como parametros los siguientes datos, estos se encuentran en EmailJS
+                //service_id,template_id, evente.target, public_key
+                emailjs.sendForm('service_v79ws7c','template_uxe6fcp',event.target, 'jDVvLa42d83oV_1F9')
+                    .then(function() {
+                        //Imprime SUCCESS si se a enviado con exito
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <!-- He dividido al body en 3 partes  -->
 
@@ -84,22 +116,23 @@
                 <h3 class="titulos-intermedios" id="contrataciones">Contrataciones</h3>
                 <div id="formulario-servicio">
                     <div id="formulario">
-                        <form class="form">
+                        <form class="form" id="contact-form">
                             <label for="nombre" class="form-label">Nombre: <span class="obligatorio">*</span></label>
-                            <input type="text" class="form-input" name="" id="nombre" placeholder="Nombre...">
+                            <!-- cada atributo name, esta puesto con el atributo que corresponde en el template de EMAILJS-->
+                            <input type="text" class="form-input" name="name" id="nombre" placeholder="Nombre...">
                             <label for="apellido" class="form-label">Apellido: <span
                                     class="obligatorio">*</span></label>
-                            <input type="text" class="form-input" name="" id="apellido" placeholder="Apellido...">
+                            <input type="text" class="form-input" name="lastName" id="apellido" placeholder="Apellido...">
                             <label for="email" class="form-label">Email: <span class="obligatorio">*</span></label>
-                            <input type="email" class="form-input" name="" id="email" placeholder="Email...">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Email...">
                             <label for="nro-telefono" class="form-label">Nro Telefono: <span
                                     class="obligatorio">*</span></label>
-                            <input type="text" class="form-input" name="" id="nro-telefono"
+                            <input type="text" class="form-input" name="phone" id="nro-telefono"
                                 placeholder="Nro Telefono...">
                             <label for="mensaje" class="form-label">Mensaje <span class="obligatorio">*</span><br><span
                                     id="aclaracion-mensaje">Por favor escribe tu solicitud con detalle será un placer
                                     servirte</span> </label>
-                            <textarea placeholder="Mensaje..." class="form-textarea" id="mensaje"></textarea>
+                            <textarea placeholder="Mensaje..." class="form-textarea" name="message" id="mensaje"></textarea>
 
                             <input type="submit" class="btn-submit" id="boton-enviar" value="Enviar">
                         </form>
@@ -133,7 +166,7 @@
                 <a href="#" id="twitter">t</a>
                 <a href="#" id="youtube">y</a>
             </div>
-            <p id="desarrollado">&copy; Desarrollado por <a href="#">Code Page S.A</a></p>
+            <p id="desarrollado">&copy; Desarrollado por <a href="#">Miguel Fernandez</a></p>
         </footer>
         <!-- Fin del pie de pagina -->
     </div>
